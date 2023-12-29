@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  padding: 10px 8%;
+  min-height: 80px;
+}
+
+.menu__bar__container {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__list__item,
+.btn {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #01162c;
+  cursor: pointer;
+}
+
+.btn {
+  transition: 0.2s linear;
+  padding: 10px 20px 10px 20px;
+  border-radius: 12.75px;
+}
+
+.btn__white {
+  border: 1px solid #f87e7e;
+  background: #fff;
+}
+
+.btn__white:hover {
+  border: 1px solid #8b7ef8;
+}
+
+.btn.btn__light__red,
+.btn.btn__white {
+  min-width: 160px;
+  min-height: 56px;
+}
+
+.btn.btn__light__red {
+  background: #f87e7e;
+  color: #fff;
+}
+
+.btn__light__red:hover {
+  background: #8b7ef8;
+}
+
+.header__list__item .btn__light__red {
+  min-width: 117px;
+  min-height: unset;
+}
+
+.header__list__item .btn__white {
+  min-width: 80px;
+  min-height: unset;
+}
+
+.intro__container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8%;
+  background: #fff;
+}
+
+.intro__info,
+.advantages__content,
+.advantages__suggestion,
+.testimonials__titles {
+  width: 574px;
+  max-width: 574px;
+}
+
+.advantages__suggestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.intro__info,
+.advantages__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.intro__info__title {
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+}
+
+.intro__info__description {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3f4f62;
+}
+
+.intro__photo__container {
+  width: 692px;
+  height: 656px;
+  background: url("./img/moder-woman-with-laptop.png") no-repeat center/cover;
+}
+
+.main__content > div,
+footer > div {
+  padding: 100px 8%;
+}
+
+.advantages__container {
+  background: #f8f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages__subtitle,
+.testimonials__subtitle {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+}
+
+.info__title {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+}
+
+.advantages__description {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3f4f62;
+}
+
+.advantages__suggestion__item {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 27px;
+  background: #fff;
+  max-height: 229px;
+  max-height: 230px;
+}
+
+.advantages__image,
+.testimonials__image {
+  width: 210px;
+  min-width: 210px;
+  height: 229px;
+  min-height: 229px;
+  border-radius: 10px 0 0 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.suggestion__item__img_1 {
+  background: url("./img/one-on-one.png") no-repeat;
+}
+
+.suggestion__item__img_2 {
+  background: url("./img/mindfulness-training.png") no-repeat;
+}
+
+.suggestion__item__img_3 {
+  background: url("./img/group.png") no-repeat;
+}
+
+.advantages__suggestion__title {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+  padding-bottom: 20px;
+}
+
+.advantages__suggestion__info {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+}
+
+.advantages__suggestion__info {
+  padding-right: 20px;
+}
+
+.advantages__btns__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonials__container {
+  width: 100%;
+  background: #fff;
+}
+
+.testimonials__content,
+.testimonials__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.testimonials__comments {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonials__comment {
+  width: 567px;
+  max-width: 567px;
+  max-height: 230px;
+  height: 230px;
+}
+
+.testimonials__item__img_1 {
+  background: url("./img/testimonial-man.png") no-repeat;
+}
+
+.testimonials__item__img_2 {
+  background: url("./img/testimonial-girl.png") no-repeat;
+}
+
+.testimonials__comment {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__comment__content {
+  background: #f8f7ff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-height: 100%;
+}
+
+.testimonial__comment__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.testimonial__comment__description {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3f4f62;
+}
+
+.testimonial__comment__author {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01162c;
+}
+
+.testimonial__comment__author__position {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3f4f62;
+}
+
+footer {
+  background: #01162c;
+}
+
+.footer__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer__menu__title,
+.footer__contacts__title,
+.footer__subscription__title {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer__menu__list,
+.footer__contacts__list {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer__menu__item,
+.footer__contact__item {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer__contact__item i {
+  color: #8b7ef8;
+  display: inline-block;
+}
+
+.footer__contact__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__contact__item span {
+  background: #8b7ef8;
+  border-radius: 100%;
+}
+
+.footer__contact__item span i {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__subscription__content {
+  width: 460px;
+  max-width: 460px;
+  height: 52px;
+  max-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer__subscription__email {
+  display: flex;
+  align-items: center;
+}
+
+.footer__subscription__input {
+  width: 330px;
+  height: 100%;
+  padding: 17px 20px 17.09px 20px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+}
+
+.footer__subscription__btn {
+  width: 124px;
+  height: 100%;
+  padding: 18px 26px 18px 26px;
+  border-radius: 0 10px 10px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #8b7ef8;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1420px) and (min-width: 1024px) {
+  .intro__container {
+    padding-left: 3%;
+  }
+
+  .main__content > div,
+  footer > div {
+    padding: 100px 3%;
+    gap: 20px;
+  }
+
+  .testimonials__comments {
+    gap: 20px;
+  }
+
+  .testimonials__comment__content {
+    padding: 8px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+  .intro__container,
+  .main__content > div,
+  footer > div {
+    padding: 50px 0 50px 3%;
+  }
+
+  header {
+    padding: 10px 3%;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+  }
+
+  .footer__container > div {
+    grid-column-end: span 2;
+  }
+
+  .footer__container > div:last-child {
+    grid-column-start: 2;
+  }
+
+  .intro__photo__container {
+    display: none;
+  }
+
+  .intro__info__title,
+  .info__title {
+    font-size: 48px;
+  }
+
+  .intro__info__description,
+  .advantages__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn.btn__light__red,
+  .btn.btn__white {
+    min-width: 140px;
+    min-height: 44px;
+  }
+
+  .main__content > div,
+  .testimonials__comments {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .main__content .advantages__container,
+  .testimonials__content {
+    padding-right: 3%;
+  }
+
+  .advantages__suggestion,
+  .testimonials__comment,
+  .testimonials__titles {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonials__comment__content {
+    height: 100%;
+  }
+
+  .footer__subscription__content {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: unset;
+    margin-top: 50px;
+  }
+
+  .footer__subscription__input {
+    width: 200px;
+  }
+
+  .footer__subscription__email {
+    height: 90%;
+  }
+
+  .footer__subscription__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > div {
+    padding-right: 3%;
+  }
+
+  .footer__subscription__title {
+    text-align: center;
+  }
+
+  .footer__subscription__content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__menu__content,
+  .footer__contacts__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__menu__list,
+  .footer__contacts__list {
+    align-items: center;
+  }
+
+  .footer__contact__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .location {
+    align-items: baseline;
+    gap: 2px;
+  }
+
+  .header__content {
+    display: none;
+  }
+
+  .menu__bar__container {
+    display: block;
+  }
+
+  .menu__bar__container i {
+    color: #01162c;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  .intro__info__title,
+  .info__title {
+    font-size: 36px;
+    line-height: unset;
+  }
+
+  .intro__info__description,
+  .advantages__description {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 90%;
+  }
+
+  .intro__info,
+  .advantages__content {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .testimonials__comment__content {
+    gap: 7px;
+  }
+}
